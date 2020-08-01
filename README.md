@@ -12,4 +12,21 @@ $settings['trusted_host_patterns'] = [
 ## Rendimiento
 Se desactivaron ciertas opciones para poder desarrollar:
 - En Rendimiento, OPTIMIZACIÓN DE ANCHO DE BANDA, se desactivaron las dos opciones de css y JavaScript.
-- En /sites/development.services.yml se agregó una sección twig.config en parameters. Esta sección tiene que ser borrada una vez la página entre en producción. 
+- En /sites/development.services.yml se agregó una sección twig.config en parameters. Esta sección tiene que ser borrada una vez la página entre en producción.
+
+## Herramientas externas a Drupal 8
+### Gulp.js
+Se instaló Node.js.
+```
+sudo apt update
+sudo apt install nodejs npm
+```
+Además, Gulp.js.
+```
+sudo npm install -g gulp-cli
+```
+
+Por último, gracias a los archivos gulpfile.js y package.json, se usó Node.js para poder instalar las librerías.
+```
+sudo npm install`
+```
