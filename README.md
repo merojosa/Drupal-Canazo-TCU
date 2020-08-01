@@ -8,3 +8,8 @@ $settings['trusted_host_patterns'] = [
   '^example\.com$',
 ];
 ```
+
+## Rendimiento
+Se desactivaron ciertas opciones para poder desarrollar:
+- En Rendimiento, OPTIMIZACIÓN DE ANCHO DE BANDA, se desactivaron las dos opciones de css y JavaScript.
+- En /sites/development.services.yml se agregó una sección twig.config en parameters. Esta sección tiene que ser borrada una vez la página entre en producción. 
