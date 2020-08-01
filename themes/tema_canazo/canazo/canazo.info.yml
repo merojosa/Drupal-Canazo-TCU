@@ -1,0 +1,12 @@
+name: Tema Canazo
+description: Tema para la página web del TCU-707 Saliendo del Canazo
+type: theme
+core: 8.x
+
+libraries:
+  - canazo/global-css
+  - canazo/global-js
+
+stylesheets-remove:
+  - core/themes/stable/css/views/views.module.css
+  - core/themes/stable/css/system/components/align.module.css
