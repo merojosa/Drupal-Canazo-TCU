@@ -41,3 +41,5 @@ sites/simpletest
 # Ignore SimpleTest multi-site environment.
 # simpletest
 
+# Gulp.js
+node_modules
