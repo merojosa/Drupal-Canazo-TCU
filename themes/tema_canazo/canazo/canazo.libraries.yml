@@ -2,9 +2,12 @@ global-css:
   css:
     theme:
       css/style.css: {}
+      css/bootstrap.min.css: {}
+    
 
 global-js:
   js:
     js/main.js: {}
+    js/bootstrap.min.js: {}
   dependencies:
     - core/jquery

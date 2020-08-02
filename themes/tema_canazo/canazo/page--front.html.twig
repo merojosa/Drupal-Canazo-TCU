@@ -1,0 +1,26 @@
+<header class="main-header" role="banner">
+    <img class="logo-header" src="themes/tema_canazo/canazo/images/firma-tipografica-una-linea-blanco.svg"/>
+
+    <h1 class="header-centro"> TCU-707 </h1>
+
+    <div class="header-derecha"> Búsqueda </div>
+</header>
+
+<div class="layout-container">
+
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+    <div class="layout-content">
+      {{ page.content }}
+    </div>{# /.layout-content #}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>

@@ -1,0 +1,18 @@
+.main-header{
+    height:130px;
+    background: $azul_ucr;
+}
+
+.logo-header {
+    float: left;
+    padding-left: $padding;
+}
+
+.header-centro {
+    color: white;
+}
+
+.header-derecha {
+    float: right;
+    padding-right: $padding;
+}
