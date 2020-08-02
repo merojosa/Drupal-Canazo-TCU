@@ -30,3 +30,9 @@ Por último, gracias a los archivos gulpfile.js y package.json, se usó Node.js 
 ```
 sudo npm install`
 ```
+
+Con el entorno ya establecido, para hacer cambios en la carpeta scss y/o lib (para hacer cambios en el tema), es necesario correr el siguiente comando **antes** de hacer dichos cambios.
+```
+sudo gulp watch`
+```
+El comando anterior estará "escuchando" los cambios y los guardará minificados en las carpetas css y js.
