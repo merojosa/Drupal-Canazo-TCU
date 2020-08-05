@@ -26,10 +26,6 @@ $element_height: 20px;
     line-height: 28px;
 }
 
-.nav-link {
-    color: white !important;
-}
-
 .logo-header {
     width: 100%;
 }
@@ -71,5 +67,39 @@ $element_height: 20px;
 
     .logo-canazo {
         padding-top: 8px;
+    }
+}
+
+.barra-navegacion
+{
+    @include span(12 last);
+
+    padding-bottom: 10px;
+
+    li {
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    a {
+        color: white !important;
+        display: block;
+        text-decoration: none;
+        padding: 0 10px;
+        font-size: 20px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+
+
+    /*Celular*/
+    @media only screen and (max-width: 768px) {
+        li {
+            float: initial;
+            padding-left: 4px;
+        }
     }
 }
