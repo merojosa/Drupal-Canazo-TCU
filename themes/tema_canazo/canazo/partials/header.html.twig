@@ -1,0 +1,37 @@
+<nav class="navbar navbar-expand-md navbar-dark sticky-top">
+  <!-- One of the primary actions on mobile is to call a business - This displays a phone button on mobile only -->
+  <div class="navbar-toggler-right">
+    <button style="border: none; outline: none;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+    </button>
+  </div>
+
+  <div class="collapse navbar-collapse flex-column " id="navbar">
+    <ul class="navbar-nav  w-100 header-primario">
+      <a class="navbar-brand" href="#"><img src="themes/tema_canazo/canazo/images/firma-tipografica-una-linea-blanco.svg" class="logo-header"/></a>
+      <li class="nav-item logo-canazo">
+        <a class="nav-link elemento-header-primario" href="#">TCU-707</a>
+      </li>
+      <li class="nav-item busqueda-header">
+        <a class="nav-link elemento-header-primario" href="#">Búsqueda</a>
+      </li>
+    </ul>
+
+    <!--
+    <ul class="navbar-nav w-100 header-secundario">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    -->
+
+    <!-- Barra de navegacion -->
+    <div class="barra-navegacion">
+      <!-- Referencia a la barra de navegacion creada en Drupal -->
+      {{page.main_navigation}}
+    </div>
+
+
+  </div>
+
+</nav>
