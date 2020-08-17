@@ -9,8 +9,8 @@ $element_height: 20px;
   
 .header-primario {
     background: $azul_ucr;
-    padding-left: $padding !important;
-    padding-right: $padding !important;
+    @include container(1400px);
+    padding-left: 15px !important;
 }
 
 .header-secundario
@@ -74,6 +74,9 @@ $element_height: 20px;
 .barra-navegacion
 {
     @include span(12 last);
+    @include container(1400px);
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 
     padding-bottom: 10px;
 
