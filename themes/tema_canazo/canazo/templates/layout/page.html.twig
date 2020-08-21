@@ -1,41 +1,47 @@
-{% include directory ~ '/partials/header.html.twig' %}
+<div class="wrapper-canazo">
 
-<div class="layout-container">
+  {% include directory ~ '/partials/header.html.twig' %}
 
-  {{ page.primary_menu }}
-  {{ page.secondary_menu }}
+  <div class="layout-container">
 
-  {{ page.breadcrumb }}
+    {{ page.primary_menu }}
+    {{ page.secondary_menu }}
 
-  {{ page.highlighted }}
+    {{ page.breadcrumb }}
 
-  {{ page.help }}
+    {{ page.highlighted }}
 
-  <main role="main">
-    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+    {{ page.help }}
 
-    <div>
-      {{ page.content }}
-    </div>{# /.layout-content #}
+    <main role="main">
+      <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
 
-    {% if page.sidebar_first %}
-      <aside class="layout-sidebar-first" role="complementary">
-        {{ page.sidebar_first }}
-      </aside>
+      <div>
+        {{ page.content }}
+      </div>{# /.layout-content #}
+
+      {% if page.sidebar_first %}
+        <aside class="layout-sidebar-first" role="complementary">
+          {{ page.sidebar_first }}
+        </aside>
+      {% endif %}
+
+      {% if page.sidebar_second %}
+        <aside class="layout-sidebar-second" role="complementary">
+          {{ page.sidebar_second }}
+        </aside>
+      {% endif %}
+
+    </main>
+
+    {% if page.footer %}
+      <footer role="contentinfo">
+        {{ page.footer }}
+      </footer>
     {% endif %}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
-        {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+  </div>{# /.layout-container #}
 
-  </main>
+  {% include directory ~ '/partials/footer.html.twig' %}
 
-  {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
-    </footer>
-  {% endif %}
-
-</div>{# /.layout-container #}
+</div>

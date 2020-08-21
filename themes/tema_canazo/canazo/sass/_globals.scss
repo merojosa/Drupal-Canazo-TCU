@@ -59,8 +59,9 @@ body{
 
 .clr{clear:both;}
 
-
-
-
-
-
+.wrapper-canazo {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
