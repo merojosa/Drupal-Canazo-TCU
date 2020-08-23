@@ -1,9 +1,13 @@
+body{
+    box-sizing: border-box;
+}
+
 main{
     margin-top: 100px;
 }
 
-.layout-content{
-    @include span(8);
+.layout-container{
+  width: 75%;
 }
 
 .layout-sidebar-first{
@@ -12,4 +16,55 @@ main{
 
 .layout-sidebar-second{
     @include span(2 last);
+}
+body{
+ box-sizing: border-box;
+  }
+
+/* Float four columns side by side */
+.column {
+  display: flexbox;
+  width: 30%;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    display: flexbox;
+    justify-content: space-evenly;
+}
+
+/* Clear floats after the columns */
+
+  
+  /* Responsive columns */
+@media screen and (max-width: 800px) {
+    .column {
+      width: 100%;
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .row {
+      margin-left: 8px;
+      margin-right: 8px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.main-img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10em;
 }
