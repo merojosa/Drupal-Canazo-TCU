@@ -1,20 +1,17 @@
-
+<p>plz kill me</p>
 <div id="accordion">
-    <div class="card">
-      <div class="card-header" id="headingOne-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}">
+  <div class="card">
+      <div class="card-header" id="headingTwo-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}">
         <h5 class="mb-0">
-          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" aria-expanded="false" aria-controls="collapseOne-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}">
-            {{
-                content.field_fecha_de_publicacion['#items'].getValue()|first.value
-            }}
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" aria-expanded="false" aria-controls="collapseTwo">
+            {{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}
           </button>
         </h5>
-      </div>
-  
-      <div id="collapseOne-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" class="collapse " aria-labelledby="headingOne-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" data-parent="#accordion">
+  </div>
+  <div id="collapseTwo-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" class="collapse" aria-labelledby="headingTwo-{{content.field_fecha_de_publicacion['#items'].getValue()|first.value}}" data-parent="#accordion">
         <div class="card-body">
-            {{content}}
+          {{content}}
         </div>
-      </div>
     </div>
   </div>
+</div>
