@@ -15,16 +15,30 @@
  * @see template_preprocess_views_view_unformatted()
  */
 #}
-{% if title %}
-  <h3>{{ title }}</h3>
-{% endif %}
-{% for row in rows %}
-  {%
-    set row_classes = [
-      default_row_class ? 'views-row',
-    ]
-  %}
-  <div{{ row.attributes.addClass(row_classes) }}>
-    {{- row.content -}}
+
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="accordion-item-{{view.title}}">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse-{{view.title}}" aria-expanded="false" aria-controls="collapse-{{view.title}}">
+          {{view.title}}
+        </button>
+      </h5>
+    </div>
+    <div id="collapse-{{view.title}}" class="collapse" aria-labelledby="accordion-item-{{view.title}}" data-parent="#accordion">
+      <div class="card-body">
+      {% for row in rows %}
+        {%
+          set row_classes = [
+            default_row_class ? 'views-row',
+          ]
+        %}
+        <div class="card" {{ row.attributes.addClass(row_classes) }}>
+          {{- row.content -}}
+        </div>
+      {% endfor %}
+      </div>
+    </div>
   </div>
-{% endfor %}
+</div>

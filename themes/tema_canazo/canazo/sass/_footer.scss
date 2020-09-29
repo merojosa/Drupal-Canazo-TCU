@@ -1,9 +1,26 @@
-.footer-canazo {
+.copyright {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: grey;
-    height: 80px;
+    background: gray;
+    height: 70px;
+}
+
+.redes-sociales {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,.2);
+    height: 120px;
+}
+
+.logo-footer {
+    width: 70px;
+    margin: 0 16px;
+}
+
+.logo-footer:hover {
+    opacity: 0.6;
 }
 
 footer > div {

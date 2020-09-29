@@ -28,6 +28,7 @@ body{
 
 .layout-container{
     @include container(1400px);
+    align-self: flex-end;
 }
 
 
@@ -42,7 +43,7 @@ body{
 }
 
 /* float clearing for IE7 */
-*+html .clearfix{
+*html .clearfix{
  min-height: 1%;
 }
 

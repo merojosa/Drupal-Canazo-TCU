@@ -3,10 +3,13 @@ body{
 }
 
 main{
-    margin-top: 100px;
+    /*aqui habia un margin.*/
+}
+.navbar {
+  margin: 0;
 }
 
-.layout-container{
+.layout-container{/*Esto lo añadi para quitar el margen del menu y el contenido*/
   width: 75%;
 }
 
@@ -62,10 +65,10 @@ body{
 }
 
 .main-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 10em;
+  margin-left: -14vw;
+  margin-bottom: 7em;
+  width: 100vw;
+  height: 50vh;
 }
 
 .descripcion-linea{
