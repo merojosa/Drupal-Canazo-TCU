@@ -1,0 +1,7 @@
+name: accordionView
+type: module
+description: 'Despliega tipos de contenido como acordiones.'
+package: Views
+core: '8.x'
+dependencies:
+  - drupal:views

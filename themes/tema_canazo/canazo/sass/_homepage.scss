@@ -59,18 +59,26 @@ body{
   text-align: center;
   background-color: white;
 }
-
 .card:hover {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
-
 .main-img{
-  margin-left: -14vw;
   margin-bottom: 7em;
-  width: 100vw;
+  width: 50vw;
   height: 50vh;
 }
-
 .descripcion-linea{
   margin: 1em; 
 }
+
+
+.views-view-grid{
+  display: flex;
+  flex-direction: column;
+}
+
+.fila-noticia{
+  display: flex;
+  justify-content: space-around;
+}
+
