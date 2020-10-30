@@ -1,5 +1,35 @@
-<div class="wrapper-canazo">
+<style>
 
+  .relatos {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+
+  .center-relato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3em;
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 50px;
+    text-align: center;
+    background-color: #f1f1f1;
+    width: 60%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card {
+      width: 80%;
+    }
+  }
+
+</style>
+
+<div class="wrapper-canazo">
   {% include directory ~ '/partials/header.html.twig' %}
 
   <div class="layout-container">
@@ -9,6 +39,37 @@
 
       <div>
         {{ page.content }}
+
+        <div class="relatos">
+
+          <div class="row">
+            <div class="col-sm center-relato">
+              <a href="relatos/citas" class="card">
+                <h3>Citas</h3>
+              </a>
+            </div>
+            <div class="col-sm center-relato">
+              <a href="relatos/audios" class="card">
+                <h3>Audios</h3>
+              </a>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm center-relato">
+              <a href="relatos/youtube" class="card">
+                <h3>YouTube</h3>
+              </a>
+            </div>
+            <div class="col-sm center-relato">
+              <a href="relatos/fotografias" class="card"> 
+                <h3>Fotografías</h3>
+              </a>
+            </div>
+          </div>
+
+        </div>
+
       </div>{# /.layout-content #}
 
     </main>
