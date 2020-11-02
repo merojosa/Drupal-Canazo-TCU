@@ -15,10 +15,18 @@
 @import "sidebar";
 @import "footer";
 
-
 /*La chanchada del siglo pero funcionó T-T*/
 .columna-noticia {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.vista-citas .views-view-grid {
+  flex-direction: initial !important;
+}
+
+.columna-cita {
+  flex: initial !important;
+  max-width: initial !important;
 }
