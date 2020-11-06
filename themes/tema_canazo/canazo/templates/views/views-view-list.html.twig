@@ -16,26 +16,23 @@
  * @see template_preprocess_views_view_list()
  */
 #}
-{% for key, value in view  %}
-    <li class>{{ key }}</li>
-  {% endfor %}
-<div>
-
-  {% if view.title == "Audio" %}
-    <div>
-      BREAKPOINT
-    </div>
+{% if attributes -%}
+  <div{{ attributes }}>
+{% endif %}
+  {% if  title %}
+    <h3 class="titulo-lista">{{ title }}</h3>
   {% endif %}
 
-  <h3 class="clase-prueba">{{view.title}}</h3>
-  <{{ list.type }}>
+  <{{ list.type }}{{ list.attributes }}>
 
     {% for row in rows %}
-      <li>
+      <li{{ row.attributes }}>
         {{- row.content -}}
       </li>
     {% endfor %}
 
   </{{ list.type }}>
 
-</div>
+{% if attributes -%}
+  </div>
+{% endif %}

@@ -29,4 +29,44 @@
 .columna-cita {
   flex: initial !important;
   max-width: initial !important;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 2em;
+}
+
+.vista-citas .views-row.clearfix {
+  width: 40%;
+  margin-top: 3em;
+}
+
+.vista-citas .views-field-title {
+  font-size: 24px;
+}
+
+.vista-citas .views-field-field-autor-del-relato {
+  font-size: 18px;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 600px) {
+  .vista-citas .views-row.clearfix {
+    width: 100%;
+  }
+
+  .vista-citas .views-field-title {
+    font-size: 20px;
+  }
+
+  .vista-citas .views-field-field-autor-del-relato {
+    font-size: 16px;
+    font-style: italic;
+  }
+
+  .columna-cita {
+    height: 16em;
+  }
 }

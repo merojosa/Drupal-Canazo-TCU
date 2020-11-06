@@ -85,3 +85,12 @@ body{
   width: 100vw;
   margin-left: calc(-52vw + 52%);
 }
+
+.views-element-container > h2{
+  display: flex;
+  justify-content: center;
+  background: $azul_ucr;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  color: white;
+}
