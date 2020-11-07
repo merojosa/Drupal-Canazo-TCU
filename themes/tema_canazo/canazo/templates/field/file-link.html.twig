@@ -12,4 +12,17 @@
  * @see stable_preprocess_image_widget()
  */
 #}
-<span{{ attributes }}>{{ link }}</span>
+
+
+
+
+{# Solo hacer esto cuando es un audio #}
+{% if link['#url'].uri ends with '.mp3' or link['#url'].uri ends with '.aac' or link['#url'].uri ends with '.wav' %}
+    <audio controls="controls" class="audio-relato">
+        <source src={{link['#url'].uri}} type="audio/mpeg">
+    </audio>
+{% else %}
+    <span{{ attributes }}>
+        {{link}}
+    </span>
+{% endif %}

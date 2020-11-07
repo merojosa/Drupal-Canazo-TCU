@@ -1,0 +1,18 @@
+<article{{ attributes }}>
+
+  {{ title_prefix }}
+  {% if not page %}
+    <h3 class="titulo-audio-relato" {{ title_attributes }}>
+      {{label}}
+    </h2>
+  {% endif %}
+
+  <div{{ content_attributes }}>
+    {#
+      El archivo que se uso para customizar el field del audio se llama: field--node--relato-audio.html.twig
+      Esta en themes/tema_canazo/canazo
+    #}
+    {{content.field_audio_del_relato}}
+  </div>
+
+</article>
