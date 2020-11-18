@@ -43,3 +43,11 @@ sites/simpletest
 
 # Gulp.js
 node_modules
+/.csslintrc
+/.editorconfig
+/.eslintignore
+/.eslintrc.json
+/.gitattributes
+/.ht.router.php
+/README.txt
+/example.gitignore

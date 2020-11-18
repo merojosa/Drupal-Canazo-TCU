@@ -1,23 +1,22 @@
 $navbar_height: 82px;
 $element_height: 20px;
 
+
+
 .navbar {
+    background:  linear-gradient(90deg, #005da4 51%, rgba(224,184,19,1) 85%, rgba(255,166,0,1) 100%);
     padding: 0 !important;
-    margin-bottom:2rem;
-    
-    background: $azul_ucr;
+    margin-bottom:2rem;    
     z-index: 9999 !important;
 }
   
 .header-primario {
-    background: $azul_ucr;
     @include container(1400px);
     padding-left: 15px !important;
 }
 
 .header-secundario
 {
-    background: $azul_ucr;
     padding-left: $padding !important;
     padding-right: $padding !important;
 }
@@ -48,14 +47,14 @@ $element_height: 20px;
     }
 
     .header-primario {
-        background: $azul_ucr;
+        background:  linear-gradient(90deg, #005da4 51%, rgba(224,184,19,1) 85%, rgba(255,166,0,1) 100%);
         padding-left: $padding / 2 !important;
         padding-right: $padding / 2 !important;
     }
     
     .header-secundario
     {
-        background: $azul_ucr;
+        background:  linear-gradient(90deg, #005da4 51%, rgba(224,184,19,1) 85%, rgba(255,166,0,1) 100%);
         padding-left: $padding / 2 !important;
         padding-right: $padding / 2 !important;
     }

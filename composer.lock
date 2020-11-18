@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ea1a346dc1e60285388f6b27eb07195",
+    "content-hash": "cac9a876ecf9acb6c89bf544335a14ba",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -664,6 +664,11 @@
         {
             "name": "drupal/core",
             "version": "8.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core.git",
+                "reference": "8f0e24555c093669ce41edbb30637fe19df16802"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core/zipball/8f0e24555c093669ce41edbb30637fe19df16802",
@@ -891,16 +896,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core.git",
-                "reference": "8f0e24555c093669ce41edbb30637fe19df16802"
-            }
+            "description": "Drupal is an open source content management platform powering millions of websites and applications."
         },
         {
             "name": "drupal/core-composer-scaffold",
             "version": "8.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "07cdfe2799789fc0c2d0e3e1ba64cb5e2a973ece"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/07cdfe2799789fc0c2d0e3e1ba64cb5e2a973ece",
@@ -936,16 +941,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "07cdfe2799789fc0c2d0e3e1ba64cb5e2a973ece"
-            }
+            ]
         },
         {
             "name": "drupal/core-project-message",
             "version": "8.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "e0e237d3da026a87784f70c1069345855340ec23"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-project-message/zipball/e0e237d3da026a87784f70c1069345855340ec23",
@@ -972,16 +977,16 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "e0e237d3da026a87784f70c1069345855340ec23"
-            }
+            ]
         },
         {
             "name": "drupal/core-recommended",
             "version": "8.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "8301ff766f17ce8a9eb36d3ffd183cbfff01dad6"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-recommended/zipball/8301ff766f17ce8a9eb36d3ffd183cbfff01dad6",
@@ -1052,16 +1057,16 @@
             "license": [
                 "GPL-2.0-or-later"
             ],
-            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "8301ff766f17ce8a9eb36d3ffd183cbfff01dad6"
-            }
+            "description": "Locked core dependencies; require this project INSTEAD OF drupal/core."
         },
         {
             "name": "drupal/core-vendor-hardening",
             "version": "8.9.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-vendor-hardening.git",
+                "reference": "59976a2b7cfa8d8437deaf5137f803bb1c19a9ca"
+            },
             "dist": {
                 "type": "zip",
                 "url": "https://api.github.com/repos/drupal/core-vendor-hardening/zipball/59976a2b7cfa8d8437deaf5137f803bb1c19a9ca",
@@ -1088,11 +1093,54 @@
             "homepage": "https://www.drupal.org/project/drupal",
             "keywords": [
                 "drupal"
-            ],
+            ]
+        },
+        {
+            "name": "drupal/photos",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/drupal/core-vendor-hardening.git",
-                "reference": "59976a2b7cfa8d8437deaf5137f803bb1c19a9ca"
+                "url": "https://git.drupalcode.org/project/photos.git",
+                "reference": "8.x-4.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/photos-8.x-4.2.zip",
+                "reference": "8.x-4.2",
+                "shasum": "8c59436578a1144ddabc84db9d305d6a8ea413fc"
+            },
+            "require": {
+                "drupal/core": "^8.7.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-4.2",
+                    "datestamp": "1575478380",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Nathaniel",
+                    "homepage": "https://www.drupal.org/user/443482"
+                },
+                {
+                    "name": "eastcn",
+                    "homepage": "https://www.drupal.org/user/134014"
+                }
+            ],
+            "description": "Picture management module. Photo albums.",
+            "homepage": "https://www.drupal.org/project/photos",
+            "support": {
+                "source": "https://git.drupalcode.org/project/photos"
             }
         },
         {

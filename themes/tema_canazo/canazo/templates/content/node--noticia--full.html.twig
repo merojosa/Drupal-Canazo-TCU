@@ -1,0 +1,19 @@
+<div class="noticia">
+    <h1 class="titulo-noticia">
+        {{ node.label }}
+    </h1>
+    <div class="resumen-noticia">
+        {{content.field_resumen['0']['#context']['value']}} 
+    </div>
+    <div class="fecha-noticia">
+        {{content.field_fecha_de_publ}}
+    </div>
+
+    <div class="cuerpo-noticia">
+        {{content.body}}
+    </div>
+        <div class="galeria-noticia">
+        {{content.field_galeria}}
+    </div>
+    
+</div>
